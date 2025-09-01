@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Night Club Candil</title>
+  <meta name="description" content="Landing page elegante para el Night Club Candil: shows en vivo, reservas VIP y reclutamiento de bailarinas." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Wireframe helpers: dashed placeholders for imagery */
+    .placeholder-box{ @apply bg-white/5 border border-white/20 rounded-2xl backdrop-blur-sm; }
+    .dashed{ border-style: dashed; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-zinc-950 via-neutral-950 to-black text-zinc-100">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 bg-black/40 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-2xl bg-pink-600/80"></div>
+        <span class="text-xl font-semibold tracking-wide">Kabaret Nocturno</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#shows" class="hover:text-pink-300">Eventos</a>
+        <a href="#reclutamiento" class="hover:text-pink-300">Únete</a>
+        <a href="#reservas" class="hover:text-pink-300">Reservas VIP</a>
+        <a href="#galeria" class="hover:text-pink-300">Galería</a>
+        <a href="#contacto" class="hover:text-pink-300">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#reservas" class="hidden sm:inline-flex px-4 py-2 rounded-2xl bg-pink-600 hover:bg-pink-500 transition font-medium">Reservar mesa</a>
+        <a href="#reclutamiento" class="inline-flex px-4 py-2 rounded-2xl border border-pink-500/60 hover:bg-pink-500/10 transition font-medium">Postúlate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-30">
+      <!-- Placeholder "video"/imagen -->
+      <div class="w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(236,72,153,.35),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(168,85,247,.25),transparent_45%)]"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28">
+      <div class="max-w-3xl">
+        <p class="text-sm uppercase tracking-[.25em] text-pink-300/90">La noche comienza aquí</p>
+        <h1 class="mt-3 text-4xl md:text-6xl font-semibold leading-tight">Espectáculo, música y experiencias <span class="text-pink-400">exclusivas</span></h1>
+        <p class="mt-5 text-zinc-300/90 md:text-lg">Shows en vivo, zonas VIP, coctelería de autor y el mejor ambiente de la ciudad. Abiertos de martes a domingo desde las 8:00 PM.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#reservas" class="px-6 py-3 rounded-2xl bg-pink-600 hover:bg-pink-500 transition font-medium">Reserva tu mesa</a>
+          <a href="#reclutamiento" class="px-6 py-3 rounded-2xl border border-white/20 hover:bg-white/10 transition font-medium">Únete al staff</a>
+        </div>
+      </div>
+      <!-- Highlights -->
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5"><p class="text-sm text-zinc-300">Shows en vivo</p><p class="text-xl font-semibold mt-1">Martes a Domingo</p></div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5"><p class="text-sm text-zinc-300">Ladies Night</p><p class="text-xl font-semibold mt-1">Jueves</p></div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5"><p class="text-sm text-zinc-300">Promos</p><p class="text-xl font-semibold mt-1">2×1 hasta 23:00</p></div>
+        <div class="p-5 rounded-2xl border border-white/10 bg-white/5"><p class="text-sm text-zinc-300">Zona VIP</p><p class="text-xl font-semibold mt-1">Reservas limitadas</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS Y HORARIOS -->
+  <section id="shows" class="py-16 md:py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="md:flex items-end justify-between gap-8">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold">Eventos & Horarios</h2>
+          <p class="mt-2 text-zinc-300">Planifica tu noche con nuestro calendario de shows y promociones.</p>
+        </div>
+        <a href="#reservas" class="mt-6 md:mt-0 inline-flex px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10">Reserva ahora</a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Tarjetas de eventos -->
+        <article class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <p class="text-sm text-zinc-400">Martes & Miércoles</p>
+          <h3 class="text-xl font-semibold mt-1">Show de Talento</h3>
+          <p class="mt-2 text-zinc-300">Artistas emergentes, coreografías nuevas y sorpresas cada semana. <span class="font-medium text-pink-300">Happy Hour 20:00–23:00</span>.</p>
+        </article>
+        <article class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <p class="text-sm text-zinc-400">Jueves</p>
+          <h3 class="text-xl font-semibold mt-1">Ladies Night</h3>
+          <p class="mt-2 text-zinc-300">Entradas especiales para ellas y DJ invitado. <span class="font-medium text-pink-300">Cover reducido</span>.</p>
+        </article>
+        <article class="p-5 rounded-2xl border border-white/10 bg-white/5">
+          <p class="text-sm text-zinc-400">Viernes a Domingo</p>
+          <h3 class="text-xl font-semibold mt-1">Show Principal</h3>
+          <p class="mt-2 text-zinc-300">Coreografía central y performance especial a medianoche. <span class="font-medium text-pink-300">Paquetes VIP</span> disponibles.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECLUTAMIENTO -->
+  <section id="reclutamiento" class="py-16 md:py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="text-sm uppercase tracking-widest text-pink-300/90">Se admiten chicas todos los lunes</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-semibold">Únete a nuestro staff</h2>
+          <p class="mt-3 text-zinc-300">Ambiente profesional, horarios flexibles y seguridad garantizada. Crece con entrenamiento y presentaciones estelares.</p>
+
+          <div class="mt-6 space-y-4">
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <h3 class="font-semibold">Requisitos</h3>
+              <ul class="mt-2 list-disc list-inside text-zinc-300 space-y-1">
+                <li>Mayor de 18 años (obligatorio).</li>
+                <li>Documento de identidad (cédula o pasaporte).</li>
+                <li>Certificado médico vigente.</li>
+                <li>2–4 fotos actuales (rostro y cuerpo, vestimenta casual).</li>
+                <li>Disponibilidad mínima: 3 noches por semana.</li>
+              </ul>
+            </div>
+            <div class="p-4 rounded-2xl border border-white/10 bg-white/5">
+              <h3 class="font-semibold">Beneficios</h3>
+              <ul class="mt-2 list-disc list-inside text-zinc-300 space-y-1">
+                <li>Pagos puntuales y competitivos.</li>
+                <li>Backstage seguro y lockers personales.</li>
+                <li>Capacitación en escena y coreografía.</li>
+                <li>Oportunidades de shows privados y propinas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de postulación -->
+        <form class="p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="text-xl font-semibold">Formulario de postulación</h3>
+          <p class="mt-1 text-sm text-zinc-300">Lunes: entrevistas presenciales 16:00–19:00. Te contactaremos por WhatsApp.</p>
+
+          <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm text-zinc-300">Nombre completo</label>
+              <input type="text" placeholder="Tu nombre" class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500" required />
+            </div>
+            <div>
+              <label class="text-sm text-zinc-300">Edad</label>
+              <input type="number" min="18" placeholder="18+" class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500" required />
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-sm text-zinc-300">WhatsApp</label>
+              <input type="tel" placeholder="Ej. +593 99 999 9999" class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500" required />
+            </div>
+            <div>
+              <label class="text-sm text-zinc-300">Disponibilidad</label>
+              <select class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <option>Noches entre semana</option>
+                <option>Fines de semana</option>
+                <option>Tiempo completo</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm text-zinc-300">Sube tus fotos (máx. 4)</label>
+              <input type="file" accept="image/*" multiple class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10" />
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-sm text-zinc-300">Mensaje (opcional)</label>
+              <textarea rows="4" placeholder="Cuéntanos tu experiencia o motivación" class="mt-1 w-full px-3 py-2 rounded-xl bg-black/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+            </div>
+          </div>
+          <div class="mt-5 flex items-start gap-3">
+            <input id="legal" type="checkbox" class="mt-1 h-4 w-4 rounded border-white/20 bg-black/40" required>
+            <label for="legal" class="text-sm text-zinc-300">Confirmo que soy mayor de 18 años y acepto ser contactada por WhatsApp.</label>
+          </div>
+          <button type="submit" class="mt-6 w-full px-4 py-3 rounded-2xl bg-pink-600 hover:bg-pink-500 font-medium">Enviar postulación</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA / AMBIENTE -->
+  <section id="galeria" class="py-16 md:py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="md:flex items-end justify-between gap-8">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold">Galería</h2>
+          <p class="mt-2 text-zinc-300">Un vistazo al ambiente: escenario, barra y zonas VIP.</p>
+        </div>
+        <a href="#contacto" class="mt-6 md:mt-0 inline-flex px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10">Solicitar prensa</a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+        <div class="aspect-[4/3] placeholder-box dashed"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS VIP -->
+  <section id="reservas" class="py-16 md:py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-semibold">Reservas VIP</h2>
+      <p class="mt-2 text-zinc-300">Experiencias para grupos y ocasiones especiales. Paquetes personalizables.</p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="text-xl font-semibold">Silver</h3>
+          <ul class="mt-3 space-y-1 text-zinc-300 text-sm">
+            <li>Mesa para 4</li>
+            <li>1 botella estándar</li>
+            <li>Ingreso preferencial</li>
+          </ul>
+          <a href="#contacto" class="mt-5 inline-flex px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10">Solicitar</a>
+        </div>
+        <div class="p-6 rounded-2xl border border-pink-500/40 bg-white/5">
+          <p class="text-xs uppercase tracking-widest text-pink-300">Más popular</p>
+          <h3 class="text-xl font-semibold">Gold</h3>
+          <ul class="mt-3 space-y-1 text-zinc-300 text-sm">
+            <li>Mesa para 6</li>
+            <li>1 botella premium</li>
+            <li>Zonas VIP</li>
+          </ul>
+          <a href="#contacto" class="mt-5 inline-flex px-4 py-2 rounded-2xl bg-pink-600 hover:bg-pink-500">Reservar Gold</a>
+        </div>
+        <div class="p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="text-xl font-semibold">Black</h3>
+          <ul class="mt-3 space-y-1 text-zinc-300 text-sm">
+            <li>Salón privado</li>
+            <li>2 botellas premium</li>
+            <li>Atención personalizada</li>
+          </ul>
+          <a href="#contacto" class="mt-5 inline-flex px-4 py-2 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10">Consultar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN Y CONTACTO -->
+  <section id="contacto" class="py-16 md:py-24 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold">Contacto & Ubicación</h2>
+          <p class="mt-2 text-zinc-300">Atención: 20:00 – 03:00 | Martes a Domingo</p>
+          <div class="mt-6 space-y-3 text-zinc-300">
+            <p><span class="font-medium">WhatsApp:</span> +593 99 999 9999</p>
+            <p><span class="font-medium">Teléfono:</span> (07) 123 4567</p>
+            <p><span class="font-medium">Dirección:</span> Avenida Ejemplo 123, Ciudad</p>
+            <div class="flex gap-3">
+              <a href="#" class="underline hover:text-pink-300">Instagram</a>
+              <a href="#" class="underline hover:text-pink-300">Facebook</a>
+              <a href="#" class="underline hover:text-pink-300">TikTok</a>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+          <!-- Placeholder de mapa: reemplazar por iframe de Google Maps -->
+          <div class="aspect-video w-full placeholder-box dashed flex items-center justify-center text-zinc-400">Mapa / Google Maps</div>
+        </div>
+      </div>
+
+      <p class="mt-8 text-xs text-zinc-400">*Ingreso exclusivo para mayores de 18 años. Nos reservamos el derecho de admisión.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-zinc-400">© <span id="year"></span> Kabaret Nocturno. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" class="hover:text-pink-300">Política de privacidad</a>
+        <span class="opacity-40">•</span>
+        <a href="#" class="hover:text-pink-300">Términos & Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
